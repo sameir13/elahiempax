@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #8f8e89;
+}
+.navbar nav {
+  max-width: 1200px;
+  border: 1px solid red;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar nav .logo img {
+  width: 200px;
+}
+.navbar nav div ul {
+  display: flex;
+  list-style: none;
+}
+.navbar nav div ul li{
+    padding: 7px 20px;
+}
+.navbar nav div ul li a{
+color: white;
+text-decoration: none;
+transition: all 0.4s linear;
+}
+.navbar nav div ul li a:hover{
+    color: rgb(52, 52, 197);
+}
