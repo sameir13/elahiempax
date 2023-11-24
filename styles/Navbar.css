@@ -1,29 +1,45 @@
 .navbar {
-  background-color: #8f8e89;
+  background-color: #8883;
+  box-shadow: 0 10px 50px -2px rgba(0,0,0,.14);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbar nav {
   max-width: 1200px;
-  border: 1px solid red;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 7px 20px;
 }
+
+.navbar nav .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar nav .logo img {
   width: 200px;
 }
-.navbar nav div ul {
+.navbar nav ul {
   display: flex;
   list-style: none;
 }
-.navbar nav div ul li{
-    padding: 7px 20px;
+.navbar nav ul li {
+  padding: 7px 20px;
 }
-.navbar nav div ul li a{
-color: white;
-text-decoration: none;
-transition: all 0.4s linear;
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: .3s;
 }
-.navbar nav div ul li a:hover{
-    color: rgb(52, 52, 197);
+.navbar nav ul li a:hover {
+  color: rgb(0, 0, 255);
+}
+
+
+@media (max-width:768px) {
+  
 }
