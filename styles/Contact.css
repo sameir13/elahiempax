@@ -1,0 +1,140 @@
+.maincontact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: #e7e6e6;
+}
+.contactimg {
+  background-image: url("https://pemamerica.com/wp-content/uploads/2020/07/London-Fog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+.contact-content {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px;
+}
+.contact-content h1 {
+  font-weight: 500;
+}
+.contact-content h2 {
+  font-weight: 400;
+  margin-top: 40px;
+}
+.contact-content a {
+  color: black;
+  text-decoration: none;
+}
+.contact-content button {
+  margin-top: 30px;
+  padding: 7px 20px;
+  border-radius: 0.25rem;
+  background-color: #4f4f4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contactmodel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: -100%;
+  transition: 0.4s all ease-in-out;
+  height: 100%;
+  padding: 10px 10px;
+
+  backdrop-filter: blur(10px);
+}
+
+.contactmodel.open {
+  left: 0;
+}
+
+.contactopenmodel {
+  max-height: 100%;
+  background-color: white;
+  transition: all 0.3s linear;
+  border-radius: 20px;
+}
+
+.contact-cross {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+.contact-cross .fa-xmark {
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+}
+.contactform {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px 30px;
+}
+.contactform h2 {
+  text-align: center;
+  font-weight: 500;
+}
+.naming-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contactform form div input,
+.contactform form div textarea {
+  display: block;
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 7px 14px;
+  border: 1px solid rgb(220, 219, 219);
+  transition: 0.3s all ease-in-out;
+}
+
+.contactform form div input:focus {
+  outline: none;
+  border: 1px solid rgb(71, 71, 109);
+}
+
+.contactform form div label {
+  display: inline-block;
+  width: 100%;
+  margin: 5px;
+  font-size: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.contactform form div button {
+  padding: 7px 14px;
+  margin-top: 10px;
+  background-color: #65bc7b;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+}
+@media (max-width: 800px) {
+  .maincontact {
+    grid-template-columns: 1fr;
+  }
+  .contactopenmodel {
+    top: 90vh;
+    transition: all 0.5s linear;
+  }
+}

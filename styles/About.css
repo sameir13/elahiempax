@@ -1,0 +1,35 @@
+.aboutmain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    min-height: 100vh;
+    background-color: #E7E6E6;
+}
+.aboutimg{
+    background-image: url("https://pemamerica.com/wp-content/uploads/2020/07/London-Fog.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.aboutcontent{
+    padding: 30px;
+  
+}
+.aboutcontent h1{
+font-weight: 500;
+}
+.aboutcontent ul {
+    
+    padding: 30px;
+
+}
+.aboutcontent ul li{
+    margin-top: 10px;
+}
+@media (max-width:800px) {
+    .aboutmain{
+        grid-template-columns: 1fr;
+    }
+}
