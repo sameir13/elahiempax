@@ -5,27 +5,6 @@ import Image from "next/image";
 const brands = () => {
   const imgArray = [
     {
-      img: "/assets/logos/5-1.png.crdownload",
-    },
-
-    {
-      img: "/assets/logos/LOGO-21.png.crdownload",
-    },
-
-    {
-      img: "/assets/logos/LOGO-23.png.crdownload",
-    },
-
-    {
-      img: "/assets/logos/6-1.png.crdownload",
-    },
-    {
-      img: "/assets/logos/LOGO-24.png.crdownload",
-    },
-    {
-      img: "/assets/logos/LOGO-25.png.crdownload",
-    },
-    {
       img: "/assets/logos/LOGO-26.png.crdownload",
     },
     {
@@ -136,7 +115,6 @@ const brands = () => {
     <div className="outline">
       <div className="brandsParentDiv">
         <div className="BrandsImages">
-       
           <img src={img[hoverState]} id="hoveredImage" alt="" />
         </div>
         <div className="BrandLogos">

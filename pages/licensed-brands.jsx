@@ -5,17 +5,7 @@ import { useState, useEffect } from 'react';
 const licensed = () => {
 
     const imgArray = [
-        {
-          img: "/assets/brands/LOGO-01.png.crdownload",
-        },
-    
-        {
-            img: "/assets/brands/LOGO-03.png.crdownload",
-          },
-    
-        {
-          img: "/assets/brands/LOGO-02.png.crdownload",
-        },
+     
 
         {
             img: "/assets/brands/LOGO-03.png.crdownload",
