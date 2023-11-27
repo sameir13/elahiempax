@@ -1,18 +1,32 @@
-import React from 'react'
+import {useState} from 'react'
 
 const Navbar = () => {
+
+  var [mobileNavOpen,setMobileNavOpen] = useState(false)
+
   return (
         <div className="navbar">
             <nav>
                 <div className='logo'>
-                  <img src="https://www.elahiimpex.com/images/logo-mona.png" alt="Elahi Empex" />
+                  <img src="/images/logo.png" alt="Elahi Empex" />
                 </div>
-                    <ul>
-                      <li className="list-item"><a href=''>Home</a></li>
-                      <li className="list-item"><a href=''>About</a></li>
-                      <li className="list-item"><a href=''>Contact</a></li>
-                      <li className="list-item"><a href=''>Products</a></li>
-                    </ul>
+
+
+                <ul className={mobileNavOpen ? "active" : ""}>
+                  <li>
+                    <a href=''>
+                      <img src="/images/logo.png" alt="" />
+                    </a></li>
+                  <li><a href=''>Home</a></li>
+                  <li><a href=''>About</a></li>
+                  <li><a href=''>Contact</a></li>
+                  <li><a href=''>Products</a></li>
+                </ul>
+
+                <div onClick={()=>setMobileNavOpen(!mobileNavOpen)} className="bars">
+                  <i className={`bx bx-${mobileNavOpen ? "x":"menu"}`}></i>
+                </div>
+
             </nav>
         </div>
   )
